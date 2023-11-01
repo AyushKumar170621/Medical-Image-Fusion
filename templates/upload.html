@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Upload Image </title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+      <style>
+         body{
+            background-color:#FAF0D7;
+         }
+      </style>
+   </head>
+   <body>
+      <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+         <div class="container-fluid">
+           <a class="navbar-brand fs-1" href="#">
+             <img src="static/logo/download.png" alt="Logo" width="90" height="72" class="d-inline-block align-text-top">
+             Medical Image Fusion
+           </a>
+         </div>
+       </nav>
+       <div class="container p-5 m-5 mt-2 pt-2"> 
+      <form action = "/extra" method = "POST" 
+         enctype = "multipart/form-data">
+         <div class="row mb-3">
+            <label for="f1" class="col-sm-2 col-form-label">Select First Image</label>
+            <div class="col-sm-10">
+              <input type = "file" class="form-control" name = "file1" id="f1"/>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="f2" class="col-sm-2 col-form-label">Select Second Image</label>
+            <div class="col-sm-10">
+               <input type = "file" name = "file2"  class="form-control" id="f2"/>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="slc" class="col-sm-2 col-form-label">Choose Fusion Scheme</label>
+            <div class="col-sm-10">
+               <select name="fshm" class="form-control" id="slc">
+                  <option value="0">Max Fuse Scheme</option>
+                  <option value="2">Mean Fuse Scheme</option>
+                  <option value="1">Sum Fuse Scheme</option>
+               </select>
+            </div>
+          </div>
+         <input class="btn btn-primary" type = "submit"/>
+      </form>
+   </div>
+   <footer>
+      <nav class="navbar fixed-bottom bg-body-tertiary">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="#">Thanks for visiting</a>
+         </div>
+       </nav>
+   </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   </body>
+</html>

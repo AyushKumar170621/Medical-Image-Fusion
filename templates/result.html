@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        body{
+          background-color: #DDE6ED;
+        }
+        th, td {
+          border: 2px solid black;
+          padding: 8px;
+          margin: 10px;
+          text-align: center;
+        }
+        fnimg{
+            margin-bottom: 100px;
+            padding:100px;
+            align:center;
+        }
+        .center1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+      </style>
+</head>
+<body>
+    <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-1" href="#">
+            <img src="static/logo/download.png" alt="Logo" width="90" height="72" class="d-inline-block align-text-top">
+            Medical Image Fusion
+          </a>
+        </div>
+      </nav>
+      <table>
+        <tr>
+          <th>Input Image</th>
+          <th>After DWT</th>
+          <th>After Fusion</th>
+          <th>After IDWT</th>
+        </tr>
+        <tr>
+          <td rowspan="2"><img src="static/img1.jpeg"></td>
+          <td><img src="static/1drs/cAimg1.png"></td>
+          <td rowspan="2"><img src="static/1dmer/img0.png"></td>
+          <td rowspan="4"><img src="static/result/res.png" alt=""></td>
+        </tr>
+        <tr>
+          
+          <td><img src="static/1drs/cDimg1.png"></td>
+        </tr>
+        <tr>
+          <td rowspan="2"><img src="static/img2.jpeg"></td>
+          <td><img src="static/1drs/cAimg2.png"></td>
+          <td rowspan="2"><img src="static/1dmer/img1.png"></td>
+        </tr>
+        <tr>
+            <td><img src="static/1drs/cDimg2.png"></td>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <hr>
+      <h3 align="center">Final Result </h3>
+    <img src="static/result/res.png" alt="" class="fnimg center1">
+    <footer>
+        <nav class="navbar sticky-bottom bg-body-tertiary">
+           <div class="container-fluid">
+             <p style="text-align:center;"><a class="navbar-brand" href="#" >Thanks for visiting</a></p>
+           </div>
+         </nav>
+     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
